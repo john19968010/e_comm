@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
     ecomm-be:
-        image: e_comm/be:prod
+        image: ecomm:prod
         container_name: ecomm-be
         restart: always
         env_file:
@@ -20,6 +20,7 @@ services:
         container_name: postgres
         restart: always
         environment:
+            - POSTGRES_PASSWORD=e_commerce
             - POSTGRES_DB=postgres
             - POSTGRES_USER=postgres
         env_file:

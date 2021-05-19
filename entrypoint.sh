@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 cd e_commerce
 pipenv run python manage.py makemigrations
 pipenv run python manage.py migrate
