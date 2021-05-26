@@ -1,5 +1,13 @@
 ## 開發流程
 
+## Initial
+- createsuperuser
+- urls 增加token與swagger OpenAPL文件(api/schema/swagger-ui/)
+
+
+
+
+
 ### 前置設定
 - 開啟新專案
 django-admin e_commerce 

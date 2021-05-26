@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "inventory",
     "drf_spectacular",
 ]
 
@@ -59,9 +60,7 @@ MIDDLEWARE = [
 # Restful API 設定
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",),
-    "DEFAULT_AUTHENTICATION_CLASSES": (
-        "rest_framework_simplejwt.authentication.JWTAuthentication",
-    ),
+    "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",),
     "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,
@@ -73,11 +72,7 @@ SPECTACULAR_SETTINGS = {
     "TITLE": "E_commerce API Document",
     "DESCRIPTION": "",
     "SCHEMA_PATH_PREFIX": r"/api/",
-    "SWAGGER_UI_SETTINGS": {
-        "deepLinking": True,
-        "filter": True,
-        "defaultModelExpandDepth": 3,
-    },
+    "SWAGGER_UI_SETTINGS": {"deepLinking": True, "filter": True, "defaultModelExpandDepth": 3,},
     "VERSION": "1.0.0",
 }
 
@@ -123,9 +118,7 @@ WSGI_APPLICATION = "e_commerce.wsgi.application"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"
-    },
+    {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"},
     {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
     {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},

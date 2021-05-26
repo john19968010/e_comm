@@ -10,6 +10,7 @@ djangorestframework-simplejwt = "*"
 drf-spectacular = "*"
 postgres = "*"
 psycopg2-binary = "==2.8.5"
+django-filter = "*"
 
 [dev-packages]
 flake8 = "==3.8.3"
