@@ -22,5 +22,5 @@
         "--ignore=F541",
         "--ignore=W605",
         "--max-line-length=120"
-    ]
+    ],
 }

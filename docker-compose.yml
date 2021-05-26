@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
     ecomm-be:
-        image: ecomm:prod
+        image: ecomm
         container_name: ecomm-be
         restart: always
         env_file:
