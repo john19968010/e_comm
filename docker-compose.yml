@@ -29,3 +29,12 @@ services:
             - ./:/opt/e_commerce
         tty: true
         network_mode: "host"
+
+    redis:
+        image: redis:6.0.8
+        container_name: redis
+        restart: always
+        tty: true
+        network_mode: "host"
+        
+

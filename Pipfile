@@ -11,6 +11,7 @@ drf-spectacular = "*"
 postgres = "*"
 psycopg2-binary = "==2.8.5"
 django-filter = "*"
+django-redis = "*"
 
 [dev-packages]
 flake8 = "==3.8.3"
