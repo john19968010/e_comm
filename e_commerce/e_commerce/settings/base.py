@@ -73,7 +73,7 @@ SPECTACULAR_SETTINGS = {
     "TITLE": "E_commerce API Document",
     "DESCRIPTION": "",
     "SCHEMA_PATH_PREFIX": r"/api/",
-    "SWAGGER_UI_SETTINGS": {"deepLinking": True, "filter": True, "defaultModelExpandDepth": 3,},
+    "SWAGGER_UI_SETTINGS": {"deepLinking": True, "filter": True, "defaultModelExpandDepth": 3},
     "VERSION": "1.0.0",
 }
 
@@ -98,7 +98,7 @@ CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://localhost:6379/0",
-        "OPTIONS": {"CLIENT_CLASS": "django_redis.client.DefaultClient",},
+        "OPTIONS": {"CLIENT_CLASS": "django_redis.client.DefaultClient"},
     }
 }
 
