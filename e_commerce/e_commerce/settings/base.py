@@ -102,6 +102,11 @@ CACHES = {
     }
 }
 
+REDIS_INFO = {
+    "host": "localhost",
+    "port": 6379,
+}
+
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
 
